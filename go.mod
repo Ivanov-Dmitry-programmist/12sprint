@@ -1,4 +1,4 @@
-module 12sprint
+module github.com/12sprint
 
 go 1.21.6
 
