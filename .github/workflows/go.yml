@@ -3,7 +3,7 @@ on: push
 jobs:
   test:
     runs-on: ubuntu-latest
-    container: golang:1.22
+    container: golang:1.23.2
     steps:
       - uses: actions/checkout@v4
 
@@ -36,9 +36,9 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/12-sprint-yp
+          images: vladimirpozdnyakov/12SPRINTFINAL
 
-      - name: Build and push Docker Inage
+      - name: Build and push Docker Image
         uses: docker/build-push-action@v5
         with:
           context: .
