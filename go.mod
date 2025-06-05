@@ -1,4 +1,4 @@
-module 12sprint
+module github.com/Ivanov-Dmitry-programmist/12sprint
 
 go 1.22.0
 
